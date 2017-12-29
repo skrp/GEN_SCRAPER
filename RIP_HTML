@@ -9,11 +9,39 @@ use LWP::Protocol::https;
 #########################################################
 # RIP_HTML - grab interesting urls from htmls
 
-my ($base, $first_regx, $second_regx, $head, $tail) = @ARGV;
-die "ARG1 base, ARG2 first_regx, ARG3 second_regx, ARG4 head, ARG5 tail" if (!defined $tail);
-
 # PREP ##################################################
-my $YAY = 0;
+
+my ($dir, $head_regx, $tail_regx, $head_rm, $tail_rm) = @ARGV;
+die "ARG1 html_dump_dir, ARG2 first_regx, ARG3 second_regx, ARG4 head, ARG5 tail" if (!defined $tail);
+
+$dir =~ s%/\z%%;
+my $got = $dir.'got/';
+mkdir $got;
+
+my $payload = $dir.GET;
+open(my $Gfh, >>, $payload);
+
+opendir(my $DH, $dir) or die "Bad dir $dir";
+my @files = readdir($DH); chomp @files;
+
+for (@files)
+{
+  my $i = $dir.$_;
+  open(my $ifh, '<', $i);
+  my @lines = <$ifh>; chomp @lines;
+  my $yay = 0;
+
+  for (@lines)
+  {
+    if (/$head_regx/ && /$tail_regx)
+    {
+      my $url = $_;
+      $url =~ s?.*$head??;
+      $url =~ s?$tail.*??;
+    }
+  }
+}
+
 
 
 
