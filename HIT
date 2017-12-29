@@ -38,5 +38,12 @@ https://www.europeana.eu/portal/en/search?f%5BIMAGE_COLOUR%5D%5B%5D=false&f%5BTY
 https://www.europeana.eu/portal/en/search?f%5BIMAGE_ASPECTRATIO%5D%5B%5D=Landscape&f%5BTYPE%5D%5B%5D=IMAGE&q=TYPE%3AIMAGE&view=grid
 https://www.europeana.eu/portal/en/search?f%5BIMAGE_ASPECTRATIO%5D%5B%5D=Portrait&f%5BTYPE%5D%5B%5D=IMAGE&q=TYPE%3AIMAGE&view=grid
 
+https://www.europeana.eu/portal/en/search?f%5BMIME_TYPE%5D%5B%5D=application%2Fpdf&f%5BTYPE%5D%5B%5D=IMAGE&q=TYPE%3AIMAGE&view=grid
+
+https://www.europeana.eu/portal/en/search?f%5BIMAGE_SIZE%5D%5B%5D=small&f%5BTYPE%5D%5B%5D=IMAGE&q=TYPE%3AIMAGE&view=grid
+https://www.europeana.eu/portal/en/search?f%5BIMAGE_SIZE%5D%5B%5D=medium&f%5BTYPE%5D%5B%5D=IMAGE&q=TYPE%3AIMAGE&view=grid
+https://www.europeana.eu/portal/en/search?f%5BIMAGE_SIZE%5D%5B%5D=large&f%5BTYPE%5D%5B%5D=IMAGE&q=TYPE%3AIMAGE&view=grid
+https://www.europeana.eu/portal/en/search?f%5BIMAGE_SIZE%5D%5B%5D=extra_large&f%5BTYPE%5D%5B%5D=IMAGE&q=TYPE%3AIMAGE&view=grid
+
 
 
