@@ -1,0 +1,5 @@
+#########################################
+# GEN_SCRAPER - generic perl scrape tools
+
+INCREMENT - if url scrape only needs a ++
+RIP_HTML - rip out urls 
