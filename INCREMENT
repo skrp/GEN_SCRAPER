@@ -14,6 +14,7 @@ my ($path, $point, $max, $url) = @ARGV;
 die "ARG1 path, ARG2 point, ARG3 max, ARG4 url" if (!defined $url);
 
 my $YAY = 0;
+my $FAIL = 0;
 
 # WORK ##################################################
 while ($point < $max)
@@ -40,6 +41,10 @@ sub neo
   my ($i) = @_;
   my $ua = uagent();
   my $url = $base.$i;
-  $ua->get($url, ':content_file'=>"$path/$point");
-  
+  my $file = "$path/$i";
+  $ua->get($url, ':content_file'=>$file);
+  if (-e $file)
+    { $YAY++; print "YAY $point   ttl $YAY   $url\n"; }
+  else
+    { $FAIL++; print "FAIL $point   ttl $FAIL   $url\n";}
 }
