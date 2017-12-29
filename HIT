@@ -8,18 +8,14 @@ maps | world-war-I | art | fashion | migration | music | natural-history | photo
 ?f%5BMEDIA%5D%5B%5D=
 true
 &f%5BMIME_TYPE%5D%5B%5D=
-application%2Fpdf | image%2Fjpeg | image%2Fpng | text%2Fplain | | | | 
+application%2Fpdf | image%2Fjpeg | image%2Fpng | text%2Fplain | audio%2Fmpeg | image%2Fgif | audio%2Fx-flac |
+/*
 &f%5B
 TEXT_FULLTEXT
 %5D%5B%5D=
-true | | | | | | | 
+true | | | | | | |
+*/
 &f%5BTYPE%5D%5B%5D=
-TEXT | | | | | | | 
+TEXT | IMAGE | SOUND | | | | | 
 &per_page=96&q=TYPE%3ATEXT&view=list
 
-
-
-https://www.europeana.eu/portal/en/collections/fashion
-?f%5BMEDIA%5D%5B%5D=
-true
-&f%5BMIME_TYPE%5D%5B%5D=image%2Fjpeg&f%5BTYPE%5D%5B%5D=IMAGE&per_page=96&q=&view=grid
