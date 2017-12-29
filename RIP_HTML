@@ -34,7 +34,7 @@ for (@files)
 
   for (@lines)
   {
-    if (/$head_regx/ && /$tail_regx)
+    if (/$head_regx/ && /$tail_regx/)
     {
 # all urls grabbed to a global file to send to HIVE
       my $url = $_;
