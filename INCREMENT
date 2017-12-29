@@ -9,17 +9,20 @@ use LWP::Protocol::https;
 #########################################################
 # INCREMENT - grab interesting htmls by ++
 
-my ($path, $point, $max, $url) = @ARGV;
-die "ARG1 path, ARG2 point, ARG3 max, ARG4 url" if (!defined $url); 
-
 # PREP ##################################################
+my ($path, $point, $max, $url) = @ARGV;
+die "ARG1 path, ARG2 point, ARG3 max, ARG4 url" if (!defined $url);
+
 my $YAY = 0;
 
-
-
-#########################################################
-#########################################################
-
+# WORK ##################################################
+while ($point < $max)
+{
+  sleep 3;
+  neo($point);
+  $point++;
+}
+print "DONE $point";
 
 #########################################################
 #########################################################
