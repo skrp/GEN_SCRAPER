@@ -8,7 +8,11 @@ maps | world-war-I | art | fashion | migration | music | natural-history | photo
 ?f%5BMEDIA%5D%5B%5D=
 true
 &f%5BMIME_TYPE%5D%5B%5D=
-application%2Fpdf | image%2Fjpeg | image%2Fpng | text%2Fplain | audio%2Fmpeg | image%2Fgif | audio%2Fx-flac |
+application%2Fpdf | image%2Fjpeg | image%2Fpng | text%2Fplain | audio%2Fmpeg 
+| image%2Fgif | audio%2Fx-flac | audio%2Fx-wav | audio%2Fx-aiff | audio%2Fogg
+| video%2Fmp4 | audio%2Fmp4 | video%2Fx-ms-wmv | video%2Fquicktime | video%2Fx-flv
+| video%2Fmpeg | audio%2Fx-ms-wma | video%2Fx-m4v | video%2Fx-msvideo | application%2Fxml
+| image%2Ftiff | | | | | | | |
 /*
 &f%5B
 TEXT_FULLTEXT
@@ -16,6 +20,23 @@ TEXT_FULLTEXT
 true | | | | | | |
 */
 &f%5BTYPE%5D%5B%5D=
-TEXT | IMAGE | SOUND | | | | | 
+TEXT | IMAGE | SOUND | VIDEO | | | | 
 &per_page=96&q=TYPE%3ATEXT&view=list
+
+
+
+&f%5BTYPE%5D%5B%5D=VIDEO&q=TYPE%3AVIDEO&view=grid
+
+https://www.europeana.eu/portal/en/search?f%5BTYPE%5D%5B%5D=VIDEO&f%5BVIDEO_DURATION%5D%5B%5D=short&q=TYPE%3AVIDEO&view=grid
+https://www.europeana.eu/portal/en/search?f%5BTYPE%5D%5B%5D=VIDEO&f%5BVIDEO_DURATION%5D%5B%5D=medium&q=TYPE%3AVIDEO&view=grid
+https://www.europeana.eu/portal/en/search?f%5BTYPE%5D%5B%5D=VIDEO&f%5BVIDEO_DURATION%5D%5B%5D=long&q=TYPE%3AVIDEO&view=grid
+
+https://www.europeana.eu/portal/en/search?f%5BMEDIA%5D%5B%5D=true&f%5BTYPE%5D%5B%5D=VIDEO&f%5BVIDEO_DURATION%5D%5B%5D=long&locale=en&q=TYPE%3AVIDEO&view=grid
+
+https://www.europeana.eu/portal/en/search?f%5BIMAGE_COLOUR%5D%5B%5D=true&f%5BTYPE%5D%5B%5D=IMAGE&q=TYPE%3AIMAGE&view=grid
+https://www.europeana.eu/portal/en/search?f%5BIMAGE_COLOUR%5D%5B%5D=false&f%5BTYPE%5D%5B%5D=IMAGE&q=TYPE%3AIMAGE&view=grid
+https://www.europeana.eu/portal/en/search?f%5BIMAGE_ASPECTRATIO%5D%5B%5D=Landscape&f%5BTYPE%5D%5B%5D=IMAGE&q=TYPE%3AIMAGE&view=grid
+https://www.europeana.eu/portal/en/search?f%5BIMAGE_ASPECTRATIO%5D%5B%5D=Portrait&f%5BTYPE%5D%5B%5D=IMAGE&q=TYPE%3AIMAGE&view=grid
+
+
 
