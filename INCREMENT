@@ -13,6 +13,7 @@ use LWP::Protocol::https;
 my ($path, $point, $max, $url) = @ARGV;
 die "ARG1 path, ARG2 point, ARG3 max, ARG4 url" if (!defined $url);
 
+$path =~ s%/\z%%;
 my $YAY = 0;
 my $FAIL = 0;
 
