@@ -5,6 +5,7 @@
 use strict; use warnings;
 use LWP::UserAgent;
 use LWP::Protocol::https;
+use File::Copy 'move';
 
 #########################################################
 # RIP_HTML - grab interesting urls from htmls
@@ -35,22 +36,17 @@ for (@files)
   {
     if (/$head_regx/ && /$tail_regx)
     {
+# all urls grabbed to a global file to send to HIVE
       my $url = $_;
       $url =~ s?.*$head??;
       $url =~ s?$tail.*??;
+      print $Gfh "$url\n";
+      $yay++;
     }
   }
+# processed files go into got dir
+# ONLY IF URLS WERE GRABBED
+  my $new_html = $got.$_;
+  print "$new_html\n";
+  move($i, $new_html) if ($yay > 0);
 }
-
-
-
-
-#########################################################
-#########################################################
-
-
-#########################################################
-#########################################################
-
-#########################################################
-#########################################################
