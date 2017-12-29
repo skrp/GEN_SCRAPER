@@ -44,7 +44,7 @@ sub neo
   my $file = "$path/$i";
   $ua->get($url, ':content_file'=>$file);
   if (-e $file)
-    { $YAY++; print "YAY $point   ttl $YAY   $url\n"; }
+    { $YAY++; print "YAY $i   ttl $YAY   $url\n"; }
   else
-    { $FAIL++; print "FAIL $point   ttl $FAIL   $url\n";}
+    { $FAIL++; print "FAIL $i   ttl $FAIL   $url\n";}
 }
