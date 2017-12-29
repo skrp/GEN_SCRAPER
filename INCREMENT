@@ -1,0 +1,13 @@
+#!/usr/local/bin/perl
+# use unix or u a punkbich button-smash hack-of-a-hacker
+#                               t(o0)j sk-a-dk-gui-scrub
+
+use strict; use warnings;
+use LWP::UserAgent;
+use LWP::Protocol::https;
+
+#########################################################
+# INCREMENT - grab interesting htmls by ++
+
+my ($base, $first_regx, $second_regx, $head, $tail) = @ARGV;
+die "ARG1 base, ARG2 first_regx, ARG3 second_regx, ARG4 head, ARG5 tail" if (!defined $tail);
